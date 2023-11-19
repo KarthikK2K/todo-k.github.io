@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#00ABE4);
+    padding: 10px;
+}
+.container h1{
+    font-family: 'YourChosenFont', sans-serif;
+    margin: auto;
+    width: 46%;
+    border: 3px solid black;
+    padding: 10px;
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    color:black;
+}
+h1:hover {
+    transform: scale(1.1);
+  }
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 80px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.home{
+    width: 50%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.todo-app p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.delete-all {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    padding: 7px 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .delete-all:hover {
+    border-radius: 5px;
+    background-color: #e6b7eca1;
+  }
+  .delete-all {
+    display: flex;
+    border-radius: 2px;    
+    margin-bottom: 25px;
+    width: 150px;
+    align-content: end;
+  }
+  
+  .delete-all {
+    align-content : right;
+    padding: 5px 15px;
+    border-radius: 100px;
+    border: 2px solid #e6b7eca1;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    float: right;
+  }
+  .filters {
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 16px 15px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    font-weight: bold; /* You can adjust this or add more styles as needed */
+    color: #888;
+}
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+ul li span{
+    position:absolute;
+    right:0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+#sudo{
+   float: center;
+}
+#redirect-button{
+    font-size: 12px;
+    float: right;
+    background-color: #f4511e;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#redirect-button:hover{
+    opacity: 1;
+}
